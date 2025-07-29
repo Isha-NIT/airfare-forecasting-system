@@ -1,79 +1,72 @@
 # ✈️ Flight Price Prediction
 
-This project applies machine learning techniques to predict flight ticket prices based on various features like duration, stops, departure time, class, airline, and more. The dataset is part of the **MLP | Term-2 | 2025 Kaggle Assignment-1**.
+A machine learning project to predict flight ticket prices based on various features such as airline, duration, class, departure time, etc.
 
 ---
 
 ## 🔍 Objective
 
-Build, evaluate, and tune multiple regression models to estimate flight prices accurately and efficiently.
+To develop regression models that accurately predict flight prices using exploratory data analysis, preprocessing pipelines, and ensemble learning techniques.
 
 ---
 
-## 📁 Dataset
+## 📂 Project Structure
 
-The dataset contains 40000 rows and 12 columns. It includes both categorical and numerical features related to flights.
+- **EDA & Cleaning**: Missing values, duplicates, outliers handled. Categorical and numerical features explored.
+- **Preprocessing**: Feature engineering (e.g., frequency encoding for high-cardinality columns), custom pipelines for encoding, scaling, and imputation.
+- **Modeling**: Trained and tuned 8 regression models including Random Forest, XGBoost, LightGBM, and Linear Regression.
+- **Evaluation**: Assessed using R², RMSE, and MAE on validation and test sets.
 
----
-
-## 🧰 Technologies Used
-
-- Python 🐍
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- XGBoost, LightGBM
-- Kaggle (Notebook Environment)
 
 ---
 
-## 🧪 Models Trained
+## 🧰 Tech Stack
 
-1. Linear Regression
-2. SGD Regressor
-3. K-Nearest Neighbors (KNN)
-4. Random Forest Regressor
-5. Gradient Boosting Regressor
-6. Extra Trees Regressor
-7. XGBoost Regressor
-8. LightGBM Regressor
+- **Languages**: Python
+- **Libraries**: pandas, numpy, scikit-learn, XGBoost, LightGBM, matplotlib, seaborn, scipy
+- **Tools**: Kaggle Notebooks, GitHub
 
 ---
 
-## 🧼 Preprocessing Steps
+## 📊 Key Highlights
 
-- **Missing Values**: Imputed using appropriate strategies (`median`, `most_frequent`)
-- **Categorical Encoding**:
-  - One-Hot Encoding (e.g. `source`, `destination`)
-  - Ordinal Encoding (e.g. `class`, `stops`, `arrival`, `departure`)
-  - Frequency Encoding (for high-cardinality `flight`)
-- **Outlier Handling**: Capped using IQR method
-- **Scaling**: StandardScaler used for scale-sensitive models
+- ✨ EDA revealed insightful trends: price vs. duration (positive), price vs. days_left (negative).
+- 🔁 Applied log transformation to stabilize skewed price distribution.
+- 🔧 Tuned hyperparameters using `RandomizedSearchCV` on ensemble models.
+- 🛠️ Used column-wise transformers with Pipelines for clean and reproducible preprocessing.
+- 🏆 Selected best model based on validation R² and retrained it on the full training set before testing.
 
 ---
 
-## 🧪 Model Evaluation
+## 📈 Final Results
 
-Metrics used:
-- ✅ R² Score
-- 📉 RMSE
-- 📊 MAE
-
-Best model selected based on validation R² Score and retrained on full training + validation set.
+| Model         | R² Score |   RMSE      |   MAE      |
+|---------------|----------|-------------|------------|
+| XGBoost       |   0.98   |  3186.31    |  1708.51   |
 
 ---
 
-## ✅ Final Submission
+## 🧠 ML Models Used
 
-The top-performing model (e.g., LightGBM / XGBoost / Random Forest) was used to make predictions on the test set, and results were exported as `submission.csv`.
+- Linear Regression
+- Stochastic Gradient Descent (SGD)
+- K-Nearest Neighbors (KNN)
+- Random Forest Regressor
+- Extra Trees Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor
+- LightGBM Regressor
 
 ---
 
-## 📈 Results
+## 🔗 GitHub & Deployment
 
-| Model              | R² Score |  RMSE   |  MAE    |
-|--------------------|----------|---------|---------|
-| XGBoost            |   0.98   | 3186.31 | 1708.51 |
+- [https://www.kaggle.com/code/ishaks2005/airfare-forecasting-system](#) 
+- (https://github.com/Isha-NIT/airfare-forecasting-system)(#) 
 
 ---
+
+## 📬 Contact
+
+For queries, contact via GitHub or ishaks1995@gmail.com
 
