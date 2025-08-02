@@ -1,4 +1,4 @@
-# ✈️ Flight Price Prediction
+# ✈️ Airfare Forecasting System
 
 A machine learning project to predict flight ticket prices based on various features such as airline, duration, class, departure time, etc.
 
