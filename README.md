@@ -59,7 +59,7 @@ To develop regression models that accurately predict flight prices using explora
 
 ---
 
-## 🔗 GitHub & Deployment
+## 🔗 GitHub & Kaggle
 
 - [https://www.kaggle.com/code/ishaks2005/airfare-forecasting-system](#) 
 - [https://github.com/Isha-NIT/airfare-forecasting-system](#) 
